@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Assistech — Assistência Técnica">
+<title>Assistech | Assistência Técnica</title>
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a href="#inicio" class="brand"><img src="logo.png" alt="Assistech"></a>
+    <button class="menu-btn" aria-label="Abrir menu">☰</button>
+    <nav id="menu">
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">ASSISTÊNCIA TÉCNICA</span>
+      <h1>Tecnologia funcionando do jeito certo.</h1>
+      <p>Manutenção e reparos com atendimento profissional, transparência e cuidado.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://wa.me/5512992226026?text=Olá%2C%20Assistech!%20Gostaria%20de%20um%20orçamento." target="_blank">Pedir orçamento</a>
+        <a class="btn secondary" href="#servicos">Conhecer serviços</a>
+      </div>
+      <div class="quick">
+        <div><strong>WhatsApp</strong><span>(12) 99222-6026</span></div>
+        <div><strong>Instagram</strong><span>@assistech26_</span></div>
+      </div>
+    </div>
+    <div class="hero-logo">
+      <div class="blue-glow"></div>
+      <img src="logo.png" alt="Logo Assistech">
+    </div>
+  </div>
+</section>
+
+<section id="servicos" class="section">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">NOSSOS SERVIÇOS</span>
+      <h2>Assistência para seus equipamentos</h2>
+      <p>Conte com a Assistech para manutenção, reparos e suporte técnico.</p>
+    </div>
+    <div class="cards">
+      <article class="card"><div class="icon">📱</div><h3>Celulares</h3><p>Diagnóstico, manutenção e reparos em smartphones.</p></article>
+      <article class="card"><div class="icon">💻</div><h3>Computadores</h3><p>Manutenção, limpeza, configuração e suporte técnico.</p></article>
+      <article class="card"><div class="icon">🔧</div><h3>Reparos</h3><p>Identificação de problemas e soluções para seus equipamentos.</p></article>
+      <article class="card"><div class="icon">⚙️</div><h3>Configuração</h3><p>Instalação, ajustes e preparação dos seus dispositivos.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" class="section dark">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">ASSISTECH</span>
+      <h2>Qualidade, transparência e tecnologia.</h2>
+      <p class="muted">Nosso objetivo é oferecer um atendimento simples, direto e profissional para ajudar você a manter seus equipamentos funcionando.</p>
+    </div>
+    <div class="features">
+      <div><span>✓</span><p><strong>Orçamento</strong><br>Converse conosco antes de autorizar o serviço.</p></div>
+      <div><span>✓</span><p><strong>Transparência</strong><br>Explicamos o problema e o serviço necessário.</p></div>
+      <div><span>✓</span><p><strong>Atendimento</strong><br>Fale conosco pelo WhatsApp ou Instagram.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="section contact">
+  <div class="container contact-box">
+    <div>
+      <span class="eyebrow">FALE CONOSCO</span>
+      <h2>Precisa de assistência?</h2>
+      <p>Envie uma mensagem e conte qual aparelho ou equipamento precisa de manutenção.</p>
+    </div>
+    <div class="contact-actions">
+      <a class="btn whatsapp" href="https://wa.me/5512992226026?text=Olá%2C%20Assistech!%20Gostaria%20de%20um%20orçamento." target="_blank">WhatsApp</a>
+      <a class="btn instagram" href="https://www.instagram.com/assistech26_/" target="_blank">Instagram</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer">
+    <img src="logo.png" alt="Assistech">
+    <p>© <span id="year"></span> Assistech — Assistência Técnica</p>
+  </div>
+</footer>
+<script>
+const btn=document.querySelector('.menu-btn'), menu=document.querySelector('#menu');
+btn.addEventListener('click',()=>menu.classList.toggle('open'));
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+document.querySelector('#year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
